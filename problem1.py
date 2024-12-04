@@ -22,3 +22,21 @@ enter a number:4
 ****
 
 """
+try:
+    width = int(input("Enter the width of the box: "))
+    height = int(input("Enter the height of the box: "))
+except:
+    print("Invalid input")
+    exit()
+if width > 10:
+    print('invalid input')
+    exit()
+
+row = height
+stars = width
+
+for row in range(1,(height+1)):
+    for stars in range(1,width):
+        print("*", end = "")
+    print("*")
+    

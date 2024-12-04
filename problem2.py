@@ -37,3 +37,24 @@ example:
 Enter a number: -4
 Invalid input
 """
+Valid = False
+x = 0
+while Valid == False:
+    try:
+        x = int(input("Enter a positive integer: "))
+    except: 
+        print("Invalid input")
+    if x % 1 == 0 and x > 0:
+        Valid = True
+    else:
+        print("Invalid input")
+y = 1
+for x in range(1,(x)):
+    y = y*(x+1)
+print(f"!{x+1} is equal to {y}")
+
+
+
+
+    
+

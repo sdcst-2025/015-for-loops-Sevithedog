@@ -23,3 +23,19 @@ Enter total payments for month(2)  : 75
 Your closing balance is $51.51
 
 """
+balance = 0
+month = 1
+for month in range(1,10000000):
+    month = month % 12
+    pur = float(input(f"Enter total purchases in month {month}: "))
+    pay = float(input(f"Enter total amount paid off in month {month}: "))
+    balance = balance + pur - pay
+    if balance > 0:
+        i = balance*0.02 
+        print(f"2% interest has been charged: ${round(i, 2)}")
+    else:
+        print("Card has been paid off")
+    balance = balance + i
+    print(f"Your closing balance is: ${round(balance, 2)}")
+
+
