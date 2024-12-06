@@ -17,10 +17,14 @@ example:
 enter a number: 4
 the sum of the series is 1234
 """
+try:
+    n = int(input("Enter an integer less than 10: "))
+except:
+    print("Please enter a positive integer less than 10")
+    exit()
+if n >= 10:
+    print("Please enter a positive integer less than 10")
+    exit()
 
-n = int(input("Enter an integer less than 10: "))
-value = 1
-i=1
 for i in range(1,n+1):
-    value = value + (10**i)
-print(value)
+    print(i, end ="")
