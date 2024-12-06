@@ -20,7 +20,7 @@ the sum of the series is 1234
 
 n = int(input("Enter an integer less than 10: "))
 value = 1
-i=n
+i=1
 for i in range(1,n+1):
-    value = value + (10**n+1)
+    value = value + (10**i)
 print(value)
